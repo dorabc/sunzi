@@ -164,7 +164,7 @@ body {
   position: relative; aspect-ratio: 16 / 10; overflow: hidden;
   background: linear-gradient(135deg, var(--paper-2), #ddd0bd);
 }
-.card-fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card-fig img { width: 100%; height: 100%; object-fit: cover; display: block; position: relative; z-index: 1; }
 .card-fig::after {
   content: ''; position: absolute; inset: 0; background: var(--ink);
   opacity: 0; transition: opacity .3s;
@@ -218,7 +218,7 @@ body {
 @keyframes pop { from { opacity: 0; transform: translateY(20px) scale(.97); } to { opacity: 1; transform: none; } }
 
 .m-hero { position: relative; aspect-ratio: 16/8; overflow: hidden; background: linear-gradient(135deg, var(--paper-2), #d9ccb8); }
-.m-hero img { width: 100%; height: 100%; object-fit: cover; }
+.m-hero img { width: 100%; height: 100%; object-fit: cover; position: relative; z-index: 1; }
 .m-hero .fig-placeholder .ph-glyph { font-size: 70px; }
 .m-close {
   position: absolute; top: 14px; right: 14px; z-index: 3;
