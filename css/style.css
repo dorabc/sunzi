@@ -115,7 +115,7 @@ body {
 }
 .hero-cta:hover { background: var(--cinnabar); transform: translateY(-2px); }
 .hero-seal {
-  position: absolute; right: 6%; bottom: 8%;
+  position: absolute; right: 40px; bottom: 40px;
   writing-mode: vertical-rl;
   font-family: var(--brush); font-size: 22px; letter-spacing: 6px;
   color: var(--paper); background: var(--seal);
@@ -331,6 +331,10 @@ body {
 .to-top:hover { background: var(--cinnabar); }
 
 /* ============ 响应式 ============ */
+/* 中等及以下宽度，居中正文会占满，隐藏侧边印章避免遮挡 */
+@media (max-width: 1180px) {
+  .hero-seal { display: none; }
+}
 @media (max-width: 720px) {
   .group-nav { display: none; }
   .header-inner { padding: 10px 16px; }
