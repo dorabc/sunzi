@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>三十六計 · 中国古典兵法智慧</title>
+  <meta name="description" content="《三十六计》全文在线阅读：六套三十六计，含原文、注音注释、白话译文、按语解析与配图。古典水墨风格，纯静态网站。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-glyph">☷</span>
+        <span class="brand-text">三十六計</span>
+      </a>
+      <nav class="group-nav" id="groupNav"><!-- 套路导航由 JS 注入 --></nav>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">中国古典兵法智慧</p>
+      <h1 class="hero-title">三十六計</h1>
+      <p class="hero-sub">瞒天过海，借力打力，三十六计走为上</p>
+      <p class="hero-desc">
+        《三十六计》乃中国古代兵家诡道之集大成。全书分为<b>胜战</b>、<b>敌战</b>、<b>攻战</b>、<b>混战</b>、<b>并战</b>、<b>败战</b>六套，每套六计，共三十六计。
+        每计皆援引《易经》之理，凝聚古人临机制胜的谋略智慧。
+      </p>
+      <a class="hero-cta" href="#group-1">开卷览阅 ↓</a>
+      <p class="hero-seal">兵 者 诡 道</p>
+    </div>
+  </section>
+
+  <!-- 计策正文（由 JS 渲染） -->
+  <main id="main"></main>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <p class="footer-line">三 十 六 計</p>
+    <p class="footer-note">古典兵法 · 谋略智慧 · 纯静态典藏网站</p>
+    <p class="footer-meta">原文取自《三十六计》原典 · 配图位预留 AI 绘图提示词</p>
+  </footer>
+
+  <!-- 返回顶部 -->
+  <button class="to-top" id="toTop" aria-label="返回顶部">☝</button>
+
+  <!-- 详情弹层 -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-mask" data-close></div>
+    <article class="modal-card" id="modalCard"></article>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
